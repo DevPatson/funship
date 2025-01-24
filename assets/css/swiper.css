@@ -1,0 +1,353 @@
+/* 
+.swiper-container {
+    width: 100%;
+}
+
+.swiper-slide {
+    background-size: cover;
+    background-position: 50%;
+    min-height: 20vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+ */
+
+
+
+/* .swiper-pagination {
+    &-bullet {
+        background-color: transparent;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        width: 12px;
+        height: 12px;
+        opacity: 1;
+    }
+
+    &-bullet-active {
+        background-color: #fff;
+    }
+}
+
+
+.swiper-button {
+    &-container {
+        background-color: rgba(0,0,0,.25);
+    }
+    &-prev {
+        background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E")
+    }
+    &-next {
+        background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E");
+    }
+}
+
+
+.swiper-slide {
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: black;
+        opacity: .4;
+    }
+    h2 {
+        pointer-events: none;
+        opacity: 0;
+        color: #ffffff;
+        font-size: calc(5vw);
+        letter-spacing: -1px;
+        transform: translateY(-5%) scale(.8);
+        transition: 1s ease;
+        text-transform: uppercase;
+        text-shadow: 0 5px 5px rgba(0,0,0, .01);
+    }
+    &-active h2 {
+        opacity: 1;
+        transform: translateY(0%) scale(1);
+        transition: 1s ease;
+    }
+}
+
+
+
+@font-face {
+  font-family: "San Francisco Display Semibold";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.eot?#iefix) format("embedded-opentype"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.woff2) format("woff2"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.woff) format("woff"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.ttf) format("truetype"), url("fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.svg#San Francisco Display Semibold") format("svg")
+} */
+
+.has-scrollbar {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    overflow-x: auto;
+    scroll-snap-type: inline mandatory;
+    padding-block-end: 20px;
+    margin-block-end: -20px;
+  }
+.has-scrollbar::-webkit-scrollbar { height: 10px; }
+
+.has-scrollbar::-webkit-scrollbar-track {
+  outline: 2px solid var(--portland-orange);
+  border-radius: var(--radius-10);
+}
+
+.has-scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: black;
+  border: 2px solid #fff;
+}
+
+.has-scrollbar::-webkit-scrollbar-button { width: calc(25% - 30px); }
+
+@media (min-width: 768px) {
+    .scrollbar-item { min-width: calc(33.33% - 20px); }
+
+}
+@media (min-width: 575px) {
+    .scrollbar-item { min-width: calc(50% - 15px); }
+
+}
+.swiper {
+    right: 1rem;
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+  }
+  
+  .swiper-wraper{
+    max-width: 500px;
+  }
+  .swiper-slide {
+    display: flex !important;
+    
+   
+  }
+  
+  
+  .slick-slide {
+    margin: 0px 15px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+} 
+ .slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+.profile_card{
+    height: 260px;
+    width: 450px; 
+    border-radius: 30px;
+    padding: 54px 24px;
+    color: #7174A0;
+    box-shadow: 0px 6px 0px rgba(45, 64, 150, 0.06);
+    background: white;
+}
+.card_user{
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex
+;
+    -webkit-align-items: flex-start;
+    -webkit-box-align: flex-start;
+    -ms-flex-align: flex-start;
+    align-items: flex-start;
+    -webkit-transition: height 0.2s ease-in;
+    transition: height 0.2s ease-in;
+    margin-bottom: 12px;
+}
+
+.card_user_holder{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex
+;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.card_image{
+    width: 66px;
+    height: 66px;
+    border-radius: 33px;
+    margin-right: 12px;
+    background: url(https://static.classdojo.com/img/careers/twitter-avatars/katieerb.png) center / cover no-repeat;
+}
+.card_user_head{
+    border-width: 0;
+    box-sizing: border-box;
+    color: inherit;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    font-style: inherit;
+    font-variant: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    margin: 0;
+    padding: 0;
+    text-decoration-line: none;
+    display: block;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: ProximaNova, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 900;
+    margin: 0;
+    color: #2C2A50;
+}
+.card_user_span{
+    border-width: 0;
+    box-sizing: border-box;
+    color: inherit;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    font-style: inherit;
+    font-variant: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    margin: 0;
+    padding: 0;
+    text-decoration-line: none;
+    display: block;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: ProximaNova, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 600;
+    margin: 0;
+    color: #AAB0D8;
+}
+.card_sep_img{
+    max-width: unset;
+    width: 260px;
+    height: 260px;
+    box-shadow: 0px 6px 0px rgba(45, 64, 150, 0.06);
+    border-radius: 30px;
+    object-fit: cover;
+    object-position: top center;
+}

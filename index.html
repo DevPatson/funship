@@ -24,6 +24,9 @@
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="./assets/css/swiper.css">
   <link rel="stylesheet" href="./assets/css/cards.css">
+  <link rel="stylesheet" href="./assets/css/hero.css">
+  <link rel="stylesheet" href="./assets/css/ladder.css">
+  <link rel="stylesheet" href="./assets/css/cta.css">
 
   <!-- 
     - google font link
@@ -141,47 +144,94 @@
         - #HERO
       -->
 
-      <section class="section hero has-bg-image" id="home" aria-label="home"
-        style="background-image: url('./assets/images/hero-bg.svg')">
-        <div class="container">
-
-          <div class="hero-content">
-
-            <h1 class="h1 section-title">
-              Empowering Kids Through <span class="span">Fun</span>  and Learning!
-             
-            </h1>
-
-            <p class="hero-text">
-              Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit.
-            </p>
-
-            <a href="#" class="btn has-before">
-              <span class="span">Find courses</span>
+      <section class="hero">
+        <div class="hero_text">
+          <h1>Where classrooms become communities</h1>
+          <p>Loved by more than 45 million students and parents.<br>
+            Free for teachers, forever.</p>
+          <div>
+            <a href="#" style="border-radius: 30px;" class="btn has-before">
+              <span class="span">Get started</span>
 
               <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
             </a>
-
           </div>
-
-          <figure class="hero-banner">
-
-            <div class="img-holder one" style="--width: 270; --height: 300;">
-              <img src="https://t4.ftcdn.net/jpg/02/56/19/51/360_F_256195103_LNdeMYQQ4X8cYT9C63DsyUfrS5w07ZzI.jpg"
-                width="270" height="300" alt="hero banner" class="img-cover">
+        </div>
+        <div class="main_hero">
+          <div class="stars">
+            <img alt="5 Stars"
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYxIiBoZWlnaHQ9IjMyIiB2aWV3Qm94PSIwIDAgMTYxIDMyIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNMTQuMjYyIDUuODU0MUMxNC44NjA3IDQuMDExNDggMTcuNDY3NSA0LjAxMTQ4IDE4LjA2NjIgNS44NTQxTDE5LjMwNzMgOS42NzM3NkMxOS41NzUgMTAuNDk3OCAyMC4zNDI5IDExLjA1NTcgMjEuMjA5NCAxMS4wNTU3SDI1LjIyNTZDMjcuMTYzIDExLjA1NTcgMjcuOTY4NiAxMy41MzUgMjYuNDAxMiAxNC42NzM4TDIzLjE1MiAxNy4wMzQ0QzIyLjQ1MSAxNy41NDM3IDIyLjE1NzcgMTguNDQ2NSAyMi40MjU0IDE5LjI3MDVMMjMuNjY2NSAyMy4wOTAyQzI0LjI2NTIgMjQuOTMyOCAyMi4xNTYzIDI2LjQ2NSAyMC41ODg4IDI1LjMyNjJMMTcuMzM5NiAyMi45NjU2QzE2LjYzODcgMjIuNDU2MyAxNS42ODk1IDIyLjQ1NjMgMTQuOTg4NSAyMi45NjU2TDExLjczOTMgMjUuMzI2MkMxMC4xNzE5IDI2LjQ2NSA4LjA2MjkxIDI0LjkzMjggOC42NjE2MSAyMy4wOTAyTDkuOTAyNjkgMTkuMjcwNUMxMC4xNzA0IDE4LjQ0NjUgOS44NzcxMyAxNy41NDM3IDkuMTc2MTUgMTcuMDM0NEw1LjkyNjk1IDE0LjY3MzhDNC4zNTk1MiAxMy41MzUgNS4xNjUwOCAxMS4wNTU3IDcuMTAyNTMgMTEuMDU1N0gxMS4xMTg4QzExLjk4NTIgMTEuMDU1NyAxMi43NTMxIDEwLjQ5NzggMTMuMDIwOSA5LjY3Mzc2TDE0LjI2MiA1Ljg1NDFaIiBmaWxsPSIjRjdCMTAwIi8+CjxwYXRoIGQ9Ik00Ni4yNjIgNS44NTQxQzQ2Ljg2MDcgNC4wMTE0OCA0OS40Njc1IDQuMDExNDggNTAuMDY2MiA1Ljg1NDFMNTEuMzA3MyA5LjY3Mzc2QzUxLjU3NSAxMC40OTc4IDUyLjM0MjkgMTEuMDU1NyA1My4yMDk0IDExLjA1NTdINTcuMjI1NkM1OS4xNjMgMTEuMDU1NyA1OS45Njg2IDEzLjUzNSA1OC40MDEyIDE0LjY3MzhMNTUuMTUyIDE3LjAzNDRDNTQuNDUxIDE3LjU0MzcgNTQuMTU3NyAxOC40NDY1IDU0LjQyNTQgMTkuMjcwNUw1NS42NjY1IDIzLjA5MDJDNTYuMjY1MiAyNC45MzI4IDU0LjE1NjMgMjYuNDY1IDUyLjU4ODggMjUuMzI2Mkw0OS4zMzk2IDIyLjk2NTZDNDguNjM4NyAyMi40NTYzIDQ3LjY4OTUgMjIuNDU2MyA0Ni45ODg1IDIyLjk2NTZMNDMuNzM5MyAyNS4zMjYyQzQyLjE3MTkgMjYuNDY1IDQwLjA2MjkgMjQuOTMyOCA0MC42NjE2IDIzLjA5MDJMNDEuOTAyNyAxOS4yNzA1QzQyLjE3MDQgMTguNDQ2NSA0MS44NzcxIDE3LjU0MzcgNDEuMTc2MiAxNy4wMzQ0TDM3LjkyNyAxNC42NzM4QzM2LjM1OTUgMTMuNTM1IDM3LjE2NTEgMTEuMDU1NyAzOS4xMDI1IDExLjA1NTdINDMuMTE4OEM0My45ODUyIDExLjA1NTcgNDQuNzUzMSAxMC40OTc4IDQ1LjAyMDkgOS42NzM3Nkw0Ni4yNjIgNS44NTQxWiIgZmlsbD0iI0Y3QjEwMCIvPgo8cGF0aCBkPSJNNzguMjYyIDUuODU0MUM3OC44NjA3IDQuMDExNDggODEuNDY3NSA0LjAxMTQ4IDgyLjA2NjIgNS44NTQxTDgzLjMwNzMgOS42NzM3NkM4My41NzUgMTAuNDk3OCA4NC4zNDI5IDExLjA1NTcgODUuMjA5NCAxMS4wNTU3SDg5LjIyNTZDOTEuMTYzIDExLjA1NTcgOTEuOTY4NiAxMy41MzUgOTAuNDAxMiAxNC42NzM4TDg3LjE1MiAxNy4wMzQ0Qzg2LjQ1MSAxNy41NDM3IDg2LjE1NzcgMTguNDQ2NSA4Ni40MjU0IDE5LjI3MDVMODcuNjY2NSAyMy4wOTAyQzg4LjI2NTIgMjQuOTMyOCA4Ni4xNTYzIDI2LjQ2NSA4NC41ODg4IDI1LjMyNjJMODEuMzM5NiAyMi45NjU2QzgwLjYzODcgMjIuNDU2MyA3OS42ODk1IDIyLjQ1NjMgNzguOTg4NSAyMi45NjU2TDc1LjczOTMgMjUuMzI2MkM3NC4xNzE5IDI2LjQ2NSA3Mi4wNjI5IDI0LjkzMjggNzIuNjYxNiAyMy4wOTAyTDczLjkwMjcgMTkuMjcwNUM3NC4xNzA0IDE4LjQ0NjUgNzMuODc3MSAxNy41NDM3IDczLjE3NjIgMTcuMDM0NEw2OS45MjcgMTQuNjczOEM2OC4zNTk1IDEzLjUzNSA2OS4xNjUxIDExLjA1NTcgNzEuMTAyNSAxMS4wNTU3SDc1LjExODhDNzUuOTg1MiAxMS4wNTU3IDc2Ljc1MzEgMTAuNDk3OCA3Ny4wMjA5IDkuNjczNzZMNzguMjYyIDUuODU0MVoiIGZpbGw9IiNGN0IxMDAiLz4KPHBhdGggZD0iTTExMC4yNjIgNS44NTQxQzExMC44NjEgNC4wMTE0OCAxMTMuNDY3IDQuMDExNDggMTE0LjA2NiA1Ljg1NDFMMTE1LjMwNyA5LjY3Mzc2QzExNS41NzUgMTAuNDk3OCAxMTYuMzQzIDExLjA1NTcgMTE3LjIwOSAxMS4wNTU3SDEyMS4yMjZDMTIzLjE2MyAxMS4wNTU3IDEyMy45NjkgMTMuNTM1IDEyMi40MDEgMTQuNjczOEwxMTkuMTUyIDE3LjAzNDRDMTE4LjQ1MSAxNy41NDM3IDExOC4xNTggMTguNDQ2NSAxMTguNDI1IDE5LjI3MDVMMTE5LjY2NyAyMy4wOTAyQzEyMC4yNjUgMjQuOTMyOCAxMTguMTU2IDI2LjQ2NSAxMTYuNTg5IDI1LjMyNjJMMTEzLjM0IDIyLjk2NTZDMTEyLjYzOSAyMi40NTYzIDExMS42ODkgMjIuNDU2MyAxMTAuOTg4IDIyLjk2NTZMMTA3LjczOSAyNS4zMjYyQzEwNi4xNzIgMjYuNDY1IDEwNC4wNjMgMjQuOTMyOCAxMDQuNjYyIDIzLjA5MDJMMTA1LjkwMyAxOS4yNzA1QzEwNi4xNyAxOC40NDY1IDEwNS44NzcgMTcuNTQzNyAxMDUuMTc2IDE3LjAzNDRMMTAxLjkyNyAxNC42NzM4QzEwMC4zNiAxMy41MzUgMTAxLjE2NSAxMS4wNTU3IDEwMy4xMDMgMTEuMDU1N0gxMDcuMTE5QzEwNy45ODUgMTEuMDU1NyAxMDguNzUzIDEwLjQ5NzggMTA5LjAyMSA5LjY3Mzc2TDExMC4yNjIgNS44NTQxWiIgZmlsbD0iI0Y3QjEwMCIvPgo8cGF0aCBkPSJNMTQyLjI2MiA1Ljg1NDFDMTQyLjg2MSA0LjAxMTQ4IDE0NS40NjcgNC4wMTE0OCAxNDYuMDY2IDUuODU0MUwxNDcuMzA3IDkuNjczNzZDMTQ3LjU3NSAxMC40OTc4IDE0OC4zNDMgMTEuMDU1NyAxNDkuMjA5IDExLjA1NTdIMTUzLjIyNkMxNTUuMTYzIDExLjA1NTcgMTU1Ljk2OSAxMy41MzUgMTU0LjQwMSAxNC42NzM4TDE1MS4xNTIgMTcuMDM0NEMxNTAuNDUxIDE3LjU0MzcgMTUwLjE1OCAxOC40NDY1IDE1MC40MjUgMTkuMjcwNUwxNTEuNjY3IDIzLjA5MDJDMTUyLjI2NSAyNC45MzI4IDE1MC4xNTYgMjYuNDY1IDE0OC41ODkgMjUuMzI2MkwxNDUuMzQgMjIuOTY1NkMxNDQuNjM5IDIyLjQ1NjMgMTQzLjY4OSAyMi40NTYzIDE0Mi45ODggMjIuOTY1NkwxMzkuNzM5IDI1LjMyNjJDMTM4LjE3MiAyNi40NjUgMTM2LjA2MyAyNC45MzI4IDEzNi42NjIgMjMuMDkwMkwxMzcuOTAzIDE5LjI3MDVDMTM4LjE3IDE4LjQ0NjUgMTM3Ljg3NyAxNy41NDM3IDEzNy4xNzYgMTcuMDM0NEwxMzMuOTI3IDE0LjY3MzhDMTMyLjM2IDEzLjUzNSAxMzMuMTY1IDExLjA1NTcgMTM1LjEwMyAxMS4wNTU3SDEzOS4xMTlDMTM5Ljk4NSAxMS4wNTU3IDE0MC43NTMgMTAuNDk3OCAxNDEuMDIxIDkuNjczNzZMMTQyLjI2MiA1Ljg1NDFaIiBmaWxsPSIjRDNEN0VDIi8+CjxnIGNsaXAtcGF0aD0idXJsKCNjbGlwMF8yOTk4XzIwMTQpIj4KPHBhdGggZD0iTTE0Mi4yNjIgNS44NTQxQzE0Mi44NjEgNC4wMTE0OCAxNDUuNDY3IDQuMDExNDggMTQ2LjA2NiA1Ljg1NDFMMTQ3LjMwNyA5LjY3Mzc2QzE0Ny41NzUgMTAuNDk3OCAxNDguMzQzIDExLjA1NTcgMTQ5LjIwOSAxMS4wNTU3SDE1My4yMjZDMTU1LjE2MyAxMS4wNTU3IDE1NS45NjkgMTMuNTM1IDE1NC40MDEgMTQuNjczOEwxNTEuMTUyIDE3LjAzNDRDMTUwLjQ1MSAxNy41NDM3IDE1MC4xNTggMTguNDQ2NSAxNTAuNDI1IDE5LjI3MDVMMTUxLjY2NyAyMy4wOTAyQzE1Mi4yNjUgMjQuOTMyOCAxNTAuMTU2IDI2LjQ2NSAxNDguNTg5IDI1LjMyNjJMMTQ1LjM0IDIyLjk2NTZDMTQ0LjYzOSAyMi40NTYzIDE0My42ODkgMjIuNDU2MyAxNDIuOTg4IDIyLjk2NTZMMTM5LjczOSAyNS4zMjYyQzEzOC4xNzIgMjYuNDY1IDEzNi4wNjMgMjQuOTMyOCAxMzYuNjYyIDIzLjA5MDJMMTM3LjkwMyAxOS4yNzA1QzEzOC4xNyAxOC40NDY1IDEzNy44NzcgMTcuNTQzNyAxMzcuMTc2IDE3LjAzNDRMMTMzLjkyNyAxNC42NzM4QzEzMi4zNiAxMy41MzUgMTMzLjE2NSAxMS4wNTU3IDEzNS4xMDMgMTEuMDU1N0gxMzkuMTE5QzEzOS45ODUgMTEuMDU1NyAxNDAuNzUzIDEwLjQ5NzggMTQxLjAyMSA5LjY3Mzc2TDE0Mi4yNjIgNS44NTQxWiIgZmlsbD0iI0Y3QjEwMCIvPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzI5OThfMjAxNCI+CjxyZWN0IHdpZHRoPSIyMCIgaGVpZ2h0PSIzMiIgZmlsbD0id2hpdGUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEyOC4xNjQpIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPC9zdmc+Cg=="
+              class="css-0 e5x6z6z0">
+              <div>
+                2 million+ reviews
+              </div>
+          </div>
+          <div class="curve_img_cont">
+            <div class="curve_img">
+              <div class="top-1 curve_box">
+                <div>
+                  <img src="https://static.classdojo.com/img/page_home/carousel-2022/home_community_1.jpg" alt="">
+                </div>
+              </div>
+              <div class="top-2 curve_box">
+                <div>
+                  <img src="https://static.classdojo.com/img/page_home/carousel-2022/home_community_16.jpg" alt="">
+                </div>
+              </div>
+              <div class="top-3 curve_box">
+                <div>
+                  <img src="https://static.classdojo.com/img/page_home/carousel-2022/home_community_17.jpg" alt="">
+                </div>
+              </div>
+              <div class="top-4 curve_box">
+                <div>
+                  <img src="https://static.classdojo.com/img/page_home/carousel-2022/home_community_25.jpg" alt="">
+                </div>
+              </div>
+              <div class="top-5 curve_box">
+                <div>
+                  <img src="https://static.classdojo.com/img/page_home/carousel-2022/home_community_21.jpg" alt="">
+                </div>
+              </div>
             </div>
-
-            <div class="img-holder two" style="--width: 240; --height: 370;">
-              <img src="https://www.shutterstock.com/image-photo/kid-reading-book-child-school-600nw-2477317791.jpg"
-                width="240" height="370" alt="hero banner" class="img-cover">
+          </div>
+          <div style="margin-top: -10px;" class="curve_img_cont">
+            <div class="curve_img">
+              <div class="bottom-1 curve_box">
+                <div>
+                  <img src="https://static.classdojo.com/img/page_home/carousel-2022/home_community_6.jpg" alt="">
+                </div>
+              </div>
+              <div class="bottom-2 curve_box">
+                <div>
+                  <img src="https://static.classdojo.com/img/page_home/carousel-2022/home_community_7.jpg" alt="">
+                </div>
+              </div>
+              <div class="bottom-3">
+                <div>
+                <h1 style="font-size: 26px !important;
+                line-height: 36px !important;font-weight: 900;
+                margin: 0;
+                color: #2C2A50; letter-spacing: -.35px;
+                padding: 0;
+                text-decoration-line: none;
+                display: block;
+                white-space: pre-wrap;
+                word-wrap: break-word;text-align: center;"> Keeping teachers, families, and kids connected</h1>
+              </div>
+              </div>
+              <div class="bottom-4 curve_box">
+                <div>
+                  <img src="https://static.classdojo.com/img/page_home/carousel-2022/home_community_30.jpg" alt="">
+                </div>
+              </div>
+              <div class="bottom-5 curve_box">
+                <div>
+                  <img src="https://static.classdojo.com/img/page_home/carousel-2022/home_community_27.jpg" alt="">
+                </div>
+              </div>
             </div>
-
-            <img src="./assets/images/hero-shape-1.svg" width="380" height="190" alt="" class="shape hero-shape-1">
-
-            <img src="./assets/images/hero-shape-2.png" width="622" height="551" alt="" class="shape hero-shape-2">
-
-          </figure>
-
+          </div>
         </div>
       </section>
 
@@ -193,7 +243,7 @@
         - #CATEGORY
       -->
 
-      <section class="section category" aria-label="category">
+      <!-- <section class="section category" aria-label="category">
         <div class="container">
 
           <p class="section-subtitle">Categories</p>
@@ -295,7 +345,7 @@
           </ul>
 
         </div>
-      </section>
+      </section> -->
 
 
 
@@ -373,12 +423,10 @@
 
 
 
-      <section class="section about" id="about" aria-label="about">
+      <!-- <section class="section about" id="about" aria-label="about">
         <div class="container">
 
           <div class="about-content">
-
-            <!-- <p class="section-subtitle">About Us</p> -->
 
             <h2 class="h2 section-title">
               Lorem, ipsum dolor.<span class="span">Lorem, ipsum.</span>
@@ -442,9 +490,6 @@
 
           </figure>
           <div class="about-content">
-
-            <!-- <p class="section-subtitle">About Us</p> -->
-
             <h2 class="h2 section-title">
               Lorem, ipsum dolor.<span class="span">Lorem, ipsum.</span>
               <br> Lorem, ipsum dolor.
@@ -466,14 +511,42 @@
               class="shape about-shape-4">
 
           </div>
+        </div>
+      </section> -->
 
 
-
-
+      <section class="section">
+        <div class="container">
+          <div class="ladder_flex ladder-1">
+            <div class="ladder_img"><img src="https://static.classdojo.com/img/page_home/features-2022/feature1.svg" ></div>
+            <div class="ladder_textCont">
+              <div>
+                <svg width="35px" height="35px" viewBox="0 0 24 20" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M12 12H6v3.987c0 .92 1.117 1.362 1.735.686L12 12z"></path><path d="M0 6.5A6.5 6.5 0 016.5 0h5a6.5 6.5 0 110 13l-5-.25c-4 0-6.5-2.66-6.5-6.25z"></path><path d="M19.98 7.096A5.002 5.002 0 0120 16.9v2.29c0 .736-.93 1.09-1.445.548L15.95 17h-.95a4.985 4.985 0 01-3.528-1.456l.509-.557a8.501 8.501 0 007.998-7.891z"></path></svg>
+              </div>
+              <span>Stay connected—instantly</span>
+              <p>Messages make it easy to communicate with teachers, families and staff anytime, anywhere—and are automatically translated into more than 35 languages 🌎</p>
+            </div>
+          </div>
+          <div class="ladder_flex ladder-2">
+            <div class="ladder_textCont">
+              <div style="background-color: #FF9517;">
+                <svg width="35px" height="35px" viewBox="0 0 24 24" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.104 3C1.494 3 1 3.494 1 4.104v13.175c0 .61.494 1.104 1.104 1.104H14.02l-1.405-1.648H2.662V4.648H20.39v4.698a4.543 4.543 0 011.662.125V4.104c0-.61-.494-1.104-1.104-1.104H2.104zm10.919 4.944l1.194 1.67c-1.65.638-2.822 2.23-2.822 4.09 0 .468.073.925.216 1.36H3.77c.863-3.589 6.106-2.332 6.106-2.332l3.147-4.788zm4.229 3.16c.033-.043.067-.086.102-.128l.044.128h-.146zm-10.144-.967c.925 0 1.675-.738 1.675-1.646 0-.908-.75-1.645-1.675-1.645-.926 0-1.676.737-1.676 1.645s.75 1.646 1.676 1.646zm11.316 1.8a3.225 3.225 0 00-2.536-1.246c-1.675 0-3.038 1.352-3.038 3.013 0 .654.207 1.276.6 1.799l4.536 5.32a.504.504 0 00.764.005l4.542-5.19c.456-.541.708-1.228.708-1.934 0-1.66-1.364-3.013-3.04-3.013-1.01 0-1.955.489-2.536 1.245z"></path><mask maskUnits="userSpaceOnUse" x="1" y="3" width="23" height="18"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.104 3C1.494 3 1 3.494 1 4.104v13.175c0 .61.494 1.104 1.104 1.104H14.02l-1.405-1.648H2.662V4.648H20.39v4.698a4.543 4.543 0 011.662.125V4.104c0-.61-.494-1.104-1.104-1.104H2.104zm10.919 4.944l1.194 1.67c-1.65.638-2.822 2.23-2.822 4.09 0 .468.073.925.216 1.36H3.77c.863-3.589 6.106-2.332 6.106-2.332l3.147-4.788zm4.229 3.16c.033-.043.067-.086.102-.128l.044.128h-.146zm-10.144-.967c.925 0 1.675-.738 1.675-1.646 0-.908-.75-1.645-1.675-1.645-.926 0-1.676.737-1.676 1.645s.75 1.646 1.676 1.646zm11.316 1.8a3.225 3.225 0 00-2.536-1.246c-1.675 0-3.038 1.352-3.038 3.013 0 .654.207 1.276.6 1.799l4.536 5.32a.504.504 0 00.764.005l4.542-5.19c.456-.541.708-1.228.708-1.934 0-1.66-1.364-3.013-3.04-3.013-1.01 0-1.955.489-2.536 1.245z"></path></mask></svg>              </div>
+              <span>Stay connected—instantly</span>
+              <p>Messages make it easy to communicate with teachers, families and staff anytime, anywhere—and are automatically translated into more than 35 languages 🌎</p>
+            </div>
+            <div class="ladder_img"><img src="https://static.classdojo.com/img/page_home/features-2022/feature2.svg" ></div>
+          </div>
+          <div class="ladder_flex ladder-3">
+            <div class="ladder_img"><img src="https://static.classdojo.com/img/page_home/features-2022/feature3.svg" ></div>
+            <div class="ladder_textCont">
+              <div style="background-color: #8047FF;">
+                <svg width="35px" height="35px" viewBox="0 0 25 24" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M20.741 2H4.26c-1.171 0-2.176.922-2.176 2.084v15.832c0 1.122.963 2.084 2.176 2.084H20.74c1.172 0 2.176-.922 2.176-2.084V4.084C22.917 2.922 21.913 2 20.74 2zm-3.723 1.483c.46 0 .837.36.837.802 0 .44-.377.801-.837.801-.46 0-.836-.36-.836-.801 0-.441.376-.802.836-.802zm-8.952 0c.46 0 .836.36.836.802 0 .44-.376.801-.836.801-.46 0-.837-.36-.837-.801 0-.441.377-.802.837-.802zm13.428 16.393c0 .4-.334.721-.753.721H4.26c-.418 0-.753-.32-.753-.721V6.289h17.988v13.587zm-14.017-2.75c.419.28 1.255.561 2.26.561 2.216 0 3.22-1.363 3.22-2.605 0-.882-.502-1.603-1.255-2.004.628-.441.963-1.042.963-1.764 0-1.082-.795-2.164-2.636-2.164a4.56 4.56 0 00-2.3.641c-.126.08-.168.24-.126.401l.293.762c.041.08.125.16.209.2.083.04.209 0 .293-.04.292-.2.836-.441 1.38-.441.67 0 1.046.28 1.046.802 0 .681-.837.962-1.422.962h-.586c-.21 0-.335.16-.335.32v.762c0 .2.168.32.335.32h.67c.292 0 1.673.04 1.714 1.203 0 .28-.125.56-.292.761-.251.24-.628.361-1.13.361-.625 0-1.213-.244-1.527-.375l-.063-.026c-.083-.04-.209-.08-.292-.04a.495.495 0 00-.21.2l-.292.802c-.084.16-.042.32.083.401zm6.795-5.697l-.017-.034-.21-.762c-.041-.12.042-.28.168-.36l1.715-.882c.042-.04.126-.04.167-.04h.92c.168 0 .335.12.335.32v7.615c0 .16-.125.321-.334.321H15.97c-.167 0-.335-.12-.335-.32v-6.093l-.878.441a.371.371 0 01-.293 0c-.108-.035-.154-.129-.192-.205z"></path></svg>              </div>
+              <span>Stay connected—instantly</span>
+              <p>Messages make it easy to communicate with teachers, families and staff anytime, anywhere—and are automatically translated into more than 35 languages 🌎</p>
+            </div>
+          </div>
         </div>
       </section>
-
-
 
 
       <!-- 
@@ -483,197 +556,23 @@
       <section class="section course" id="courses" aria-label="course">
         <div class="container">
 
-          <p class="section-subtitle">Popular Courses</p>
-
-          <h2 class="h2 section-title">Pick A Course To Get Started</h2>
-
-          <ul class="grid-list">
-
-            <li>
-              <div class="course-card">
-
-                <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
-                  <img src="./assets/images/course-1.jpg" width="370" height="220" loading="lazy"
-                    alt="Build Responsive Real- World Websites with HTML and CSS" class="img-cover">
-                </figure>
-
-                <div class="abs-badge">
-                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
-
-                  <span class="span">3 Weeks</span>
-                </div>
-
-                <div class="card-content">
-
-                  <span class="badge">Beginner</span>
-
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Build Responsive Real- World Websites with HTML and CSS</a>
-                  </h3>
-
-                  <div class="wrapper">
-
-                    <div class="rating-wrapper">
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                    </div>
-
-                    <p class="rating-text">(5.0/7 Rating)</p>
-
-                  </div>
-
-                  <data class="price" value="29">$29.00</data>
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
-
-                      <span class="span">8 Lessons</span>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
-
-                      <span class="span">20 Students</span>
-                    </li>
-
-                  </ul>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="course-card">
-
-                <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
-                  <img src="./assets/images/course-2.jpg" width="370" height="220" loading="lazy"
-                    alt="Java Programming Masterclass for Software Developers" class="img-cover">
-                </figure>
-
-                <div class="abs-badge">
-                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
-
-                  <span class="span">8 Weeks</span>
-                </div>
-
-                <div class="card-content">
-
-                  <span class="badge">Advanced</span>
-
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Java Programming Masterclass for Software Developers</a>
-                  </h3>
-
-                  <div class="wrapper">
-
-                    <div class="rating-wrapper">
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                    </div>
-
-                    <p class="rating-text">(4.5 /9 Rating)</p>
-
-                  </div>
-
-                  <data class="price" value="49">$49.00</data>
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
-
-                      <span class="span">15 Lessons</span>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
-
-                      <span class="span">35 Students</span>
-                    </li>
-
-                  </ul>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="course-card">
-
-                <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
-                  <img src="./assets/images/course-3.jpg" width="370" height="220" loading="lazy"
-                    alt="The Complete Camtasia Course for Content Creators" class="img-cover">
-                </figure>
-
-                <div class="abs-badge">
-                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
-
-                  <span class="span">3 Weeks</span>
-                </div>
-
-                <div class="card-content">
-
-                  <span class="badge">Intermediate</span>
-
-                  <h3 class="h3">
-                    <a href="#" class="card-title">The Complete Camtasia Course for Content Creators</a>
-                  </h3>
-
-                  <div class="wrapper">
-
-                    <div class="rating-wrapper">
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                    </div>
-
-                    <p class="rating-text">(4.9 /7 Rating)</p>
-
-                  </div>
-
-                  <data class="price" value="35">$35.00</data>
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
-
-                      <span class="span">13 Lessons</span>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
-
-                      <span class="span">18 Students</span>
-                    </li>
-
-                  </ul>
-
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-          <a href="#" class="btn has-before">
-            <span class="span">Browse more courses</span>
-
-            <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-          </a>
-
+          
+          <div class="course_container">
+            <div class="course_container_text">
+              <p class="course_head">
+                Learning together through play
+              </p>
+              <p class="course-text">
+                Funship games have magical world where kids explore STEM, teamwork, and creativity. Trusted by teachers, loved by families. Perfect for class or home use.
+              </p>
+              <a><span>Join Now</span></a>
+            </div>
+            <div class="course-container_img">
+              <img src="https://www.classdojo.com/static/mario-452fa991f494781d40175168deeafc48.png" alt="" srcset="">
+            </div>
+        </div>
+
+      
         </div>
       </section>
 
@@ -692,7 +591,7 @@
           <div class="video-card">
 
             <div class="video-banner img-holder has-after" style="--width: ; --height: ;">
-              <img src="./assets/images/video-banner.jpg" width="970" height="550" loading="lazy" alt="video banner"
+              <img src="https://www.classdojo.com/static/bg_tutor-c4c8f5852914953f7daaf24fd6a1ad10.png" width="970" height="550" loading="lazy" alt="video banner"
                 class="img-cover">
 
               <button class="play-btn" aria-label="play video">
@@ -778,8 +677,7 @@
             
             <h2 style=" text-align:center; padding: 20px; font-size: 3rem;">Our Community </h2>
 
-            <!-- <h2 class="h2 section-title">Our Clients</h2>
-      <p style="margin-block: 5px 35px;" class="section-text">We work with a diverse range of businesses, delivering tailored solutions that drive their success and growth.</p> -->
+           
             <section class="customer-logos slider" style="margin-top: 3rem;margin-bottom: 4rem;">
 
               <div class="slide">
@@ -919,23 +817,12 @@
           d="M0 0v4c136 143.8 183.8-73.2 297 26.6 72.2 63.7 97 99 184.7 33.2a30.5 30.5 0 0 1 36.6 0c87.6 65.8 112.5 30.5 184.7-33.2C816.2-69.2 864 147.7 1000 4V0H0Z">
         </path>
       </svg>
-      <!-- <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide slide_1">Slide 1</div>
-          <div class="swiper-slide slide_2">Slide 2</div>
-          <div class="swiper-slide slide_3">Slide 3</div>
-          <div class="swiper-slide slide_4">Slide 4</div>
-          <div class="swiper-slide slide_5">Slide 5</div>
-        </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-      
-      </div> -->
+
 
       <!-- 
         - #BLOG
       -->
-      <section class="section blog has-bg-image" id="blog" aria-label="blog"
+      <!-- <section class="section blog has-bg-image" id="blog" aria-label="blog"
         style="background-image: url('./assets/images/blog-bg.svg')">
         <div class="container">
 
@@ -1086,14 +973,25 @@
             class="shape blog-shape">
 
         </div>
-      </section>
+      </section> -->
 
     </article>
   </main>
 
 
-
-
+  <section class="cta_section" style="position: relative;">
+    <div class="custom-shape-divider-top-1739875711">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+      </svg>
+  </div>
+  <div class="cta_text">
+    <h2>Let's get growing</h2>
+    <button>
+      <span>Get Started</span>
+    </button>
+  </div>
+  </section>
 
   <!-- 
     - #FOOTER

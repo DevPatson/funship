@@ -1,0 +1,87 @@
+.custom-shape-divider-top-1739875711 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1739875711 svg {
+    position: relative;
+    display: block;
+    width: calc(156% + 1.3px);
+    height: 146px;
+}
+
+.custom-shape-divider-top-1739875711 .shape-fill {
+    fill: #FFFFFF;
+}
+.cta_section{
+    background-image: url(https://static.classdojo.com/img/staff-messaging/cta_background_image.jpg);
+    background-size: 102% auto, cover;
+    background-repeat: no-repeat;
+    -webkit-background-position: center -1px, center top;
+    background-position: center -1px, center top;
+    height: 95vh;
+    position: relative;
+    -webkit-background-size: 102% auto, cover;
+    background-size: 102% auto, cover;
+    background-repeat: no-repeat;
+    -webkit-background-position: center -1px, center top;
+    background-position: center -1px, center top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cta_text{
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+.cta_text h2{
+    font-weight: 800;
+        font-size: 60px;
+        line-height: 100%;
+        text-align: center;
+        letter-spacing: -0.5px;
+        color: #fff;
+}
+.cta_text button{
+    border: none;
+    position: relative;
+    background-color: #00B2F7;
+    border-radius: 40px;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    font-weight: bold;
+    padding: 17px 20px;
+    transition: .4s ease;
+}
+.cta_text button:hover{
+    background-color: #018fc7;
+}
+.cta_text button span{
+    color: #fff;
+    white-space: nowrap;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 500;
+    margin: 0;
+}
